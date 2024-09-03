@@ -7,9 +7,9 @@ export async function getContentRecs() {
     try {
         const response = await fetch(url, {
             method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+            // headers: {
+            //     'Content-Type': 'application/json',
+            // },
         });
 
         if (!response.ok) {
