@@ -45,7 +45,7 @@ const [contentRecs, setContentRecs] = useState<any | null>(null);
         {contentRecs && contentRecs.map((rec: any) => (
           <div className='relative flex w-full h-2/5 md:h-4/5 justify-center' key={rec.title}>
             <CardWithImage
-              src={`https://${rec.main_image_url}`}
+              src={`https:${rec.main_image_url}`}
               title={rec.title}
               // description={rec.description}
             />
