@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'i.idio.co/**',
+        hostname: 'i.idio.co',
         port: '', // Leave this blank if not using a custom port
       },
     ],
