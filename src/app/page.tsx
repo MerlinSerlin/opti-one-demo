@@ -47,7 +47,7 @@ const [contentRecs, setContentRecs] = useState<any | null>(null);
             <CardWithImage
               src={`https://${rec.main_image_url}`}
               title={rec.title}
-              description={rec.description}
+              // description={rec.description}
             />
           </div>
         ))}
