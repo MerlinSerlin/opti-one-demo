@@ -43,14 +43,12 @@ const [contentRecs, setContentRecs] = useState<any | null>(null);
       </div>
       <div className='flex flex-col md:flex-row w-full h-full justify-center items-center'>
         {contentRecs && contentRecs.map((rec: any) => (
-          // <div className='flex items-center justify-center w-full h-full' key={rec.id}>
-            <div className='relative flex w-full h-2/5 md:h-4/5 justify-center'>
-              <CardWithImage
-                src={`https://${rec.main_image_url}`}
-                title={rec.title}
-                description={rec.description}
-              />
-            {/* </div> */}
+          <div className='relative flex w-full h-2/5 md:h-4/5 justify-center' key={rec.title}>
+            <CardWithImage
+              src={`https://${rec.main_image_url}`}
+              title={rec.title}
+              description={rec.description}
+            />
           </div>
         ))}
       </div>
