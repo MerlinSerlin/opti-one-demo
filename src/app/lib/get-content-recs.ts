@@ -3,13 +3,12 @@ export async function getContentRecs() {
     const recsKey = 'H9V3VUWCHRVGRLP1QBLY';
     const numberOfRecs = 3;
 
+    // Chris' cloudflare endpoint
     const url = `https://fxrestapi.optidemo.com/api/content_recommendations?visitor_id=${userId}&key=${recsKey}&rpp=${numberOfRecs}`
+    
     try {
         const response = await fetch(url, {
             method: 'GET',
-            // headers: {
-            //     'Content-Type': 'application/json',
-            // },
         });
 
         if (!response.ok) {
@@ -24,5 +23,3 @@ export async function getContentRecs() {
         return null;
     }
 }
-
-// Chris' cloudflare endpoint

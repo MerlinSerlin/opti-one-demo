@@ -5,7 +5,7 @@ import Script from 'next/script';
 import Head from 'next/head';
 
 const TravelPage = () => {
-    const imageUrl = '/japan-unsplash.jpg';
+    const imageUrl = 'https://unsplash.com/photos/canal-between-cherry-blossom-trees-8sOZJ8JF0S8';
 
   return (
     <>
@@ -22,8 +22,8 @@ const TravelPage = () => {
         </Script>
 
         <Head>
-            <meta property="og:image" content={'/japan-unsplash.jpg'} />
-            <meta property="og:image:alt" content="Description of the image" />
+            <meta property="og:image" content={imageUrl} />
+            <meta property="og:image:alt" content="Cherry Blossoms Over Water" />
             <title>Japan Travel Page 1</title>
         </Head>
 
