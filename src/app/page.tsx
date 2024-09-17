@@ -6,6 +6,7 @@ import { UserAttributes } from '@optimizely/optimizely-sdk';
 import { getContentRecs } from './lib/get-content-recs';
 // import Image from 'next/image';
 import CardWithImage from '@/components/card-with-image';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -51,6 +52,12 @@ const [contentRecs, setContentRecs] = useState<any | null>(null);
             />
           </div>
         ))}
+      </div>
+      <div>
+        <Link href="/blog/japan">Japan</Link>
+      </div>
+      <div>
+        <Link href="/blog/build-a-website">Build A Website</Link>
       </div>
       
     </main>

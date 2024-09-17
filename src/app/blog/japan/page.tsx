@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import Script from 'next/script';
+import Head from 'next/head';
 
-const TravelBlog = () => {
+const TravelPage = () => {
+    const imageUrl = '/japan-unsplash.jpg';
+
   return (
     <>
         <Script id="idio-tracking" strategy="afterInteractive">
@@ -17,6 +20,12 @@ const TravelBlog = () => {
             !function(d,s){var ia=d.createElement(s);ia.async=1,s=d.getElementsByTagName(s)[0],ia.src='//s.usea01.idio.episerver.net/ia.js',s.parentNode.insertBefore(ia,s)}(document,'script');
             `}
         </Script>
+
+        <Head>
+            <meta property="og:image" content={'/japan-unsplash.jpg'} />
+            <meta property="og:image:alt" content="Description of the image" />
+            <title>Japan Travel Page 1</title>
+        </Head>
 
         <div className="max-w-4xl mx-auto p-8">
         <header className="mb-12">
@@ -68,4 +77,4 @@ const TravelBlog = () => {
   );
 }
 
-export default TravelBlog;
+export default TravelPage;
