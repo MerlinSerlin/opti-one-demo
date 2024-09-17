@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Script from 'next/script';
-import Head from 'next/head';
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
@@ -16,8 +15,6 @@ export const metadata: Metadata = {
 }
 
 const TravelPage = () => {
-    // const imageUrl = 'https://unsplash.com/photos/canal-between-cherry-blossom-trees-8sOZJ8JF0S8';
-
   return (
     <>
         <Script id="idio-tracking" strategy="afterInteractive">
@@ -31,12 +28,6 @@ const TravelPage = () => {
             !function(d,s){var ia=d.createElement(s);ia.async=1,s=d.getElementsByTagName(s)[0],ia.src='//s.usea01.idio.episerver.net/ia.js',s.parentNode.insertBefore(ia,s)}(document,'script');
             `}
         </Script>
-
-        {/* <Head>
-            <meta property="og:image" content={imageUrl} />
-            <meta property="og:image:alt" content="Cherry Blossoms Over Water" />
-            <title>Japan Travel Page 1</title>
-        </Head> */}
 
         <div className="max-w-4xl mx-auto p-8">
         <header className="mb-12">
