@@ -32,7 +32,7 @@ const TemplesOfJapanPage = () => {
         <div className="max-w-4xl mx-auto p-8">
         <header className="mb-12">
             <h1 className="text-4xl font-bold mb-4">The Timeless Beauty of Japanese Temples</h1>
-            <p className="text-lg text-gray-600">Exploring the architectural and spiritual wonders of Japan's ancient temples.</p>
+            <p className="text-lg text-gray-600">Exploring the architectural and spiritual wonders of Japans ancient temples.</p>
         </header>
 
         <section className="mb-8">
@@ -64,7 +64,7 @@ const TemplesOfJapanPage = () => {
         <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-2">Fushimi Inari Shrine: The Path of a Thousand Torii</h2>
             <p className="text-lg leading-relaxed text-gray-700">
-            Although technically a Shinto shrine, Fushimi Inari Taisha is an essential part of Japan's spiritual landscape. Located in Kyoto, it is famous for its thousands of bright red torii gates that wind up the forested slopes of Mount Inari. This sacred site has been a pilgrimage destination for centuries and offers visitors a serene escape from the bustle of the city.
+            Although technically a Shinto shrine, Fushimi Inari Taisha is an essential part of Japans spiritual landscape. Located in Kyoto, it is famous for its thousands of bright red torii gates that wind up the forested slopes of Mount Inari. This sacred site has been a pilgrimage destination for centuries and offers visitors a serene escape from the bustle of the city.
             </p>
         </section>
 
