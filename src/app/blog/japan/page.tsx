@@ -1,11 +1,22 @@
-'use client'
-
 import Image from 'next/image';
 import Script from 'next/script';
 import Head from 'next/head';
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  openGraph: {
+    images: [
+        {
+            url: 'https://unsplash.com/photos/canal-between-cherry-blossom-trees-8sOZJ8JF0S8',
+            alt: 'Cherry Blossoms Over Water',
+        },
+        ],
+    title: 'Japan Travel Page 1',
+  }
+}
 
 const TravelPage = () => {
-    const imageUrl = 'https://unsplash.com/photos/canal-between-cherry-blossom-trees-8sOZJ8JF0S8';
+    // const imageUrl = 'https://unsplash.com/photos/canal-between-cherry-blossom-trees-8sOZJ8JF0S8';
 
   return (
     <>
@@ -21,11 +32,11 @@ const TravelPage = () => {
             `}
         </Script>
 
-        <Head>
+        {/* <Head>
             <meta property="og:image" content={imageUrl} />
             <meta property="og:image:alt" content="Cherry Blossoms Over Water" />
             <title>Japan Travel Page 1</title>
-        </Head>
+        </Head> */}
 
         <div className="max-w-4xl mx-auto p-8">
         <header className="mb-12">
