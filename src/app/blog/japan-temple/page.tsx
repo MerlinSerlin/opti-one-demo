@@ -57,7 +57,7 @@ const TemplesOfJapanPage = () => {
         <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-2">Senso-ji: Tokyo’s Oldest Temple</h2>
             <p className="text-lg leading-relaxed text-gray-700">
-            Senso-ji, located in the Asakusa district of Tokyo, is the city's oldest and most visited temple. Founded in 645 AD, Senso-ji is dedicated to Kannon, the goddess of mercy. Visitors are greeted by the iconic Kaminarimon gate, which leads to a vibrant market street before reaching the grand temple itself.
+            Senso-ji, located in the Asakusa district of Tokyo, is the citys oldest and most visited temple. Founded in 645 AD, Senso-ji is dedicated to Kannon, the goddess of mercy. Visitors are greeted by the iconic Kaminarimon gate, which leads to a vibrant market street before reaching the grand temple itself.
             </p>
         </section>
 
@@ -71,7 +71,7 @@ const TemplesOfJapanPage = () => {
         <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-2">Todai-ji: The Great Buddha of Nara</h2>
             <p className="text-lg leading-relaxed text-gray-700">
-            Todai-ji, located in Nara, is home to the world’s largest bronze statue of the Buddha. This ancient temple, built in the 8th century, stands at the center of Nara Park, where friendly deer roam freely. The main hall, Daibutsuden, is one of the largest wooden structures in the world, and the temple holds a special place in Japan’s religious history.
+            Todai-ji, located in Nara, is home to the worlds largest bronze statue of the Buddha. This ancient temple, built in the 8th century, stands at the center of Nara Park, where friendly deer roam freely. The main hall, Daibutsuden, is one of the largest wooden structures in the world, and the temple holds a special place in Japans religious history.
             </p>
         </section>
 
