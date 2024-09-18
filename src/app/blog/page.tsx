@@ -35,7 +35,7 @@ const BlogHomepage = () => {
               <Link href="/blog/japan-city" className="text-blue-600 hover:underline">
                 Exploring Japanese Cities
               </Link>
-              <p className="text-gray-600">Dive into the vibrant urban landscapes of Japan's most exciting cities.</p>
+              <p className="text-gray-600">Dive into the vibrant urban landscapes of Japans most exciting cities.</p>
             </li>
             <li className="mb-4">
               <Link href="/blog/japan-food" className="text-blue-600 hover:underline">
@@ -47,7 +47,7 @@ const BlogHomepage = () => {
               <Link href="/blog/japan-temple" className="text-blue-600 hover:underline">
                 Exploring Japanese Temples
               </Link>
-              <p className="text-gray-600">Experience the tranquility and beauty of Japan's historic temples.</p>
+              <p className="text-gray-600">Experience the tranquility and beauty of Japans historic temples.</p>
             </li>
           </ul>
         </section>
