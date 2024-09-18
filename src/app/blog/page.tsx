@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Script from 'next/script';
 import type { Metadata } from 'next';
+import { Input } from "@/components/ui/input"
+import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
   title: 'Blog Homepage',
@@ -8,6 +10,9 @@ export const metadata: Metadata = {
 };
 
 const BlogHomepage = () => {
+  const cookieStore = cookies();
+  const hasEmail = cookieStore.has('has_email');
+
   return (
     <>
       <Script id="idio-tracking" strategy="afterInteractive">
@@ -52,7 +57,13 @@ const BlogHomepage = () => {
           </ul>
         </section>
 
-        <footer className="mt-12 text-center">
+        <footer className="mt-12 text-center space-y-6">
+          {!hasEmail && <div className="flex justify-center">
+            <Input type="email" placeholder="Email" />
+            <button className="ml-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+              Subscribe
+            </button>
+          </div>}
           <p className="text-gray-600">Published on September 17, 2024</p>
         </footer>
       </div>

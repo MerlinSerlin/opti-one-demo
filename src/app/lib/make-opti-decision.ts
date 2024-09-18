@@ -1,6 +1,7 @@
 import { createInstance } from "@optimizely/optimizely-sdk";
 
 import { UserAttributes } from "@optimizely/optimizely-sdk";
+import { setCookie } from "@/lib/set-cookie";
 
 export interface MakeOptiDecisionProps {
     sdkKey: string;
@@ -27,6 +28,12 @@ export async function makeOptiDecision(decisionData: MakeOptiDecisionProps) {
           const fetched = await user?.fetchQualifiedSegments()
           console.log(fetched) // returns bool value
           console.log(user?.qualifiedSegments) // Updated qualified segments for target user
+          // Qualified segments are an array, we need to store them in a cookie
+          if (user?.qualifiedSegments) {
+            user.qualifiedSegments.map((value) => {
+              setCookie(value, true)
+            })
+          }
           const decision = user?.decide(flagKey);
           return decision || null;  // Return the decision or null if it fails
       } else {

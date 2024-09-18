@@ -1,7 +1,5 @@
 export async function getContentRecs(recsKey: string, numberOfRecs: number) {
     const userId = 'user123';
-    // const recsKey = 'H9V3VUWCHRVGRLP1QBLY';
-    // const numberOfRecs = 3;
 
     // Chris' cloudflare endpoint
     const url = `https://fxrestapi.optidemo.com/api/content_recommendations?visitor_id=${userId}&key=${recsKey}&rpp=${numberOfRecs}`
