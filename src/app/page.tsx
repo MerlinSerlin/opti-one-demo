@@ -81,7 +81,7 @@ export default function Home() {
           <header className="mb-12">
             <h1 className="text-5xl font-bold mb-6">Welcome to Adventure Japan</h1>
             <p className="text-lg text-gray-700">
-              Embark on a journey through Japan like never before. Our website is dedicated to adventurers and enthusiasts of Japanese culture. Whether you're exploring bustling cities, savoring exquisite cuisine, or discovering serene temples, we have something for everyone.
+              Embark on a journey through Japan like never before. Our website is dedicated to adventurers and enthusiasts of Japanese culture. Whether youre exploring bustling cities, savoring exquisite cuisine, or discovering serene temples, we have something for everyone.
             </p>
           </header>
   
