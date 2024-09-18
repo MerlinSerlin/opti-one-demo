@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 }
 
 const TemplesOfJapanPage = () => {
+
   return (
     <>
         <Script id="idio-tracking" strategy="afterInteractive">

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Image from 'next/image';
 import Script from 'next/script';
 import type { Metadata } from 'next'
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 }
 
 const JapaneseFoodPage = () => {
+
   return (
     <>
         <Script id="idio-tracking" strategy="afterInteractive">

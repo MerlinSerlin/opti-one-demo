@@ -22,7 +22,8 @@ export async function makeOptiDecision(decisionData: MakeOptiDecisionProps) {
 
       if (success) {
           // Create the Optimizely user context and make a decision
-          const user = optimizelyClient?.createUserContext(userID, validAttributes);
+          const user = optimizelyClient.createUserContext(userID, validAttributes);;
+          console.log(validAttributes)
           const fetched = await user?.fetchQualifiedSegments()
           console.log(fetched) // returns bool value
           console.log(user?.qualifiedSegments) // Updated qualified segments for target user
